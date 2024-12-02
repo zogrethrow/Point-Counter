@@ -1,0 +1,45 @@
+.container {
+  height: 100%;
+}
+
+.is-boxed {
+  max-width: 300px;
+  width: 100%;
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.control.is-active .button {
+  background-color: var(--bulma-primary);
+}
+
+.is-fullheight {
+  height: 100%;
+}
+
+.modal .modal-card-head {
+  box-shadow: unset;
+}
+
+/*noinspection CssUnresolvedCustomProperty*/
+.modal .modal-card-foot {
+  background-color: var(--bulma-modal-card-body-background-color);
+}
+
+.is-vgrouped {
+  .field:last-child {
+    .control .input {
+      border-start-start-radius: 0;
+    }
+  }
+
+  .field:not(:last-child) {
+    margin-bottom: 0;
+    .control:first-child .button {
+      border-end-start-radius: 0;
+    }
+
+    .control:last-child .button {
+      border-end-end-radius: 0;
+    }
+  }
+}
